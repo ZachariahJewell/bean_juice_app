@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "977478755508",
+    "firebase_url": "https://beanjuice-aa33c-default-rtdb.firebaseio.com",
+    "project_id": "beanjuice-aa33c",
+    "storage_bucket": "beanjuice-aa33c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977478755508:android:332c8b9c0c221474aaa3e1",
+        "android_client_info": {
+          "package_name": "com.firestoretesting.firestore_testing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977478755508-2cggk283ot58ki93kg829n59mml90gd6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDweld6Nt1GkwwPqC93UUlOCbC61pDjXd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977478755508-2cggk283ot58ki93kg829n59mml90gd6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
