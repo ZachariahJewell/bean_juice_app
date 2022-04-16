@@ -86,41 +86,42 @@ class _SearchScreenState extends State<SearchScreen> {
                 height: 40,
                 color: Colors.white,
                 child: Center(
-                  child: TextField(
-                    showCursor: false,
-                    readOnly: true,
-                    decoration: InputDecoration(
-                        hintText: 'Search for something',
-                        prefixIcon: Icon(Icons.search)),
-                    onTap: () => showSearch(
-                      context: context,
-                      delegate: SearchPage<Coffee>(
-                        onQueryUpdate: (s) => print(s),
-                        items: coffeeList,
-                        searchLabel: 'Search people',
-                        barTheme: ThemeData(appBarTheme: AppBarTheme(backgroundColor: Colors.white, foregroundColor: Colors.deepOrange)),
-                        suggestion: Center(
-                          child: Text('Filter people by name, surname or age'),
-                        ),
-                        failure: Center(
-                          child: Text('No person found :('),
-                        ),
-                        filter: (coffee) => [
-                          // person.name,
-                          // person.surname,
-                          // person.age.toString(),
-                          coffee.roast,
-                          coffee.name,
-                          coffee.brand,
-                        ],
-                        builder: (coffee) => ListTile(
-                          title: Text(coffee.name),
-                          subtitle: Text(coffee.brand),
-                          trailing: Text('${coffee.roast}'),
-                        ),
-                      ),
-                    ),
-                  ),
+                  child: Container(),
+                  // child: TextField(
+                  //   showCursor: false,
+                  //   readOnly: true,
+                  //   decoration: InputDecoration(
+                  //       hintText: 'Search for something',
+                  //       prefixIcon: Icon(Icons.search)),
+                  //   onTap: () => showSearch(
+                  //     context: context,
+                  //     delegate: SearchPage<Coffee>(
+                  //       onQueryUpdate: (s) => print(s),
+                  //       items: coffeeList,
+                  //       searchLabel: 'Search people',
+                  //       barTheme: ThemeData(appBarTheme: AppBarTheme(backgroundColor: Colors.white, foregroundColor: Colors.deepOrange)),
+                  //       suggestion: Center(
+                  //         child: Text('Filter people by name, surname or age'),
+                  //       ),
+                  //       failure: Center(
+                  //         child: Text('No person found :('),
+                  //       ),
+                  //       filter: (coffee) => [
+                  //         // person.name,
+                  //         // person.surname,
+                  //         // person.age.toString(),
+                  //         coffee.roast,
+                  //         coffee.name,
+                  //         coffee.brand,
+                  //       ],
+                  //       builder: (coffee) => ListTile(
+                  //         title: Text(coffee.name),
+                  //         subtitle: Text(coffee.brand),
+                  //         trailing: Text('${coffee.roast}'),
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
                   ),
                 ),
               ),
